@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head id="head">
+  <base href="/">
+  <title>Learning Center | Directory</title>
+  <link rel="shortcut icon" href="assets/images/masq.ico">
+  <link href=https://fonts.googleapis.com/css?family =Bree+Serif|Cormorant+Unicase|Dancing+Script|Great+Vibes|Miss+Fajardose rel=stylesheet>
+  <!--<script type="text/javascript\" src="format.js"></script>onload="format('Learning Center | Directory');"-->
+</head>
+
+<body >
+  <!--Universal header-->
+  <header id="header">
+      <h1 align=center class=shadow>Learning Center</h1>
+      <h2 align=center class=shadow>Trademark here(tm)</h2>
+  </header>
+
+  <nav id="nav_list">
+    <ul>
+      <li><a routerLink="/home" [class.activated]="currentUrl == '/home'">Home</a></li>
+      <li><a routerLink="/thankyou" href="#">Sign In</a></li>
+      <li><a routerLink="/thankyou" href="#">Learning Categories</a></li>
+      <li><a routerLink="/thankyou" href="#">Inventory</a></li>
+      <li><a routerLink="/thankyou" href="#">Check Out</a></li>
+    </ul>
+  </nav>
+
+  <div id="container" class="row">
+
+    <aside id="game_list" class="col">
+      <h1 id=Games class=shadow>Categories</h1>
+      <ul>
+        <li><a routerLink="/thankyou" [class.activated]="currentUrl == '/thankyou'">Design</a></li>
+        <li><a routerLink="/thankyou" href="#">Illustration</a></li>
+        <li><a routerLink="/thankyou" href="#">Business</a></li>
+        <li><a routerLink="/thankyou" href="#">Technology</a></li>
+        <li><a routerLink="/thankyou" href="#">Photo & Film</a></li>
+        <li><a routerLink="/thankyou" href="#">Entrepreneurship</a></li>
+        <li><a routerLink="/thankyou" href="#">Writing</a></li>
+      </ul>
+    </aside>
+
+    <section class="col">
+      <app-root></app-root>
+    </section>
+  </div>
+
+  <footer id="footer">
+    Copyright &copy; 2019 Solomon Williams</br>
+    <a href=mailto:Yeet@Haw.com>Charli@Horss.com</a>
+  </footer>
+</body>
+</html>

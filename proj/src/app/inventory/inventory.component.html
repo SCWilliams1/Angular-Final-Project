@@ -1,0 +1,14 @@
+<h1>Inventory</h1>
+
+<form method="get" name="registration_form" id="registration_form"
+      routerLink="/checkout" action="currentUrl == '/checkout'">
+
+  <fieldset *ngFor="let users of users$">
+    <legend>Current Products</legend>
+    <label for="bill">Price: ${{ users.price }}</label>
+    <input type="checkbox" name="product" id="/details/{{users.id}}" value="bill">{{ users.name }}
+  </fieldset>
+  <input type="submit" value="Check Out">
+</form>
+
+
